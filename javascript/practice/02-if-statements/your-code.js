@@ -7,15 +7,15 @@
 
 // You are given four variables with numeric values.
 
-var kidsWhoWantToSwim = 25;   // number of kids who want to swim
-var kidsWhoWantDoArchery = 5; // number of kids who want to do archery
-var totalSwimmers = 0;        // number of kids who are actually swimming in the afternoon
-var totalArchers = 0;         // number of kids who are actually doing archery in the afternoon
+var kidsWhoWantToSwim = -13;   // number of kids who want to swim25
+var kidsWhoWantDoArchery = -12; // number of kids who want to do archery5
+var totalSwimmers = 0;        // number of kids who are actually swimming in the afternoon0
+var totalArchers = 0;         // number of kids who are actually doing archery in the afternoon0
 
 // Using if and else statements, apply the following rules:
 // If kidsWhoWantToSwim is even,
 // - assign the value of kidsWhoWantToSwim to totalSwimmers
-// - assign the value of kidsWhoWantDoArchery to totalArchers
+// - assign the value of kidsWhoWantToSwim to totalArchers
 
 // If kidsWhoWantToSwim is odd, then at least one kid doesn't have a swimming buddy. 
 // To avoid leaving anyone out, we'll just do archery that afternoon.
@@ -29,7 +29,25 @@ var totalArchers = 0;         // number of kids who are actually doing archery i
 
 // Write your code here:
 
-
+if((kidsWhoWantToSwim <0) || (kidsWhoWantDoArchery <0))
+ {
+	 console.log("it's an invalid setup!");
+     alert("INVALID!");
+	 totalSwimmers=0;
+	 totalArchers=0;
+ }
+ else
+ {
+	if(kidsWhoWantToSwim%2==0)
+	{
+		totalSwimmers=kidsWhoWantToSwim;
+		totalArchers=kidsWhoWantDoArchery; 
+	}
+	else
+	{
+		totalArchers=kidsWhoWantToSwim+kidsWhoWantDoArchery;
+	}
+ }
 
 // When you're finished, save the changes and open practice/02-if-statements/index.html with your browser. (The html file is is the same subfolder as this file, and it already includes code to reference this file.)
 // Open the JavaScript console in your browser's developer tools.
