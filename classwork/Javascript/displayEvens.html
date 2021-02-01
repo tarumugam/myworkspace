@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DISPLAY EVENS</title>
+    <link rel="stylesheet" 
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+	<h1>SAMPLE</h1>
+	<form onsubmit="return displayEvens();">
+            		<div class="form-row">
+			<div class="form-group col">
+				<label for="start">Starting Number</label>
+				<input type="text" class="form-control" id="start" required>
+				<div class="invalid-feedback">
+					start Number is required and must be a number.
+				</div>
+			</div> 
+		</div> 
+		<div class="form-row">
+			<div class="form-group col">
+				<label for="End">Ending Number</label>
+				<input type="text" class="form-control" id="end" required>
+				<div class="invalid-feedback">
+					Ending Number should be less than 
+				</div>
+			</div>
+		</div> 
+		<div class="form-row">
+			<div class="form-group col">
+				<label for="step">Step</label>
+				<input type="text" class="form-control" id="step" required>
+				<div class="invalid-feedback">
+					step Number is not a negative number
+				</div>        
+			</div>         
+		</div> 
+		<div class="form-row">
+			<div class="form-group col">
+					<button type="submit" id="submitButton"  class="btn btn-primary">
+					Display Evens</button>
+            
+			</div>
+		</div> 
+</form>
+<table onload="displayEvens()">
+        <thead>
+            
+        </thead>
+        <tbody>
+		    <tr>
+			 <td ><label for="step" id = "outputTitle"></label></td>
+            <td ><output type ="text" id="outputText"></td>
+			</tr>
+        </tbody>
+    </table>
+
+</div> <!-- end .container -->
+<script src="displayEvens.js"></script>
+</body>
+</html>

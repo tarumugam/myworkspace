@@ -11,17 +11,47 @@
 // (I'll write the code for this one.)
 
 console.log("FOR ONE TO SEVEN");
-for (var n = 1; n <= 7; n++) {
+
+
+console.log("USING For LOOP");
+
+for (var n = 1; n <= 7; n++)
+	{
     console.log(n);
-}
+	}
+	
+console.log("USING while LOOP");
+var n=1;
+	while(n<=7)
+	{
+		
+		console.log(n);
+		n++;
+	}
+	
 
 // 1. FOR ONE TO TEN
 // =================
 // Write a for loop that loops through the numbers 1 through 10.
 // Print each number to the JavaScript console.
 console.log("FOR ONE TO TEN");
-// Write your code here:
 
+
+console.log("USING For LOOP");
+// Write your code here:
+for (var n = 1; n <= 10; n++) 
+	{
+    console.log(n);
+	}
+
+console.log("USING while LOOP");
+var n=1;
+	while(n<=10)
+	{
+		
+		console.log(n);
+		n++;
+	}
 
 
 // 2. COUNT BY TWOS FROM TWO TO TWELVE
@@ -38,9 +68,20 @@ console.log("FOR ONE TO TEN");
 // 10
 // 12
 console.log("COUNT BY TWOS FROM TWO TO TWELVE");
+console.log("USING For LOOP");
 // Write your code here:
-
-
+for (var n = 2; n <= 12; n=n+2) 
+	{
+    console.log(n);
+	}
+console.log("USING while LOOP");
+var n=2;
+	while(n<=12)
+	{
+			
+		console.log(n);
+		n=n+2;
+	}
 
 // 3. COUNT BACKWARD FROM SIX
 // ==========================
@@ -57,10 +98,20 @@ console.log("COUNT BY TWOS FROM TWO TO TWELVE");
 // 1
 // 0
 console.log("COUNT BACKWARD FROM SIX");
-// Write your code here:
-
-
-
+console.log("USING For LOOP");
+// Write your code here
+for (var n = 6; n >= 0; n--)
+	{
+    console.log(n);
+	}
+console.log("USING while LOOP");
+var n=6;
+	while(n>=0)
+	{
+		
+		console.log(n);
+		n--;
+	}
 // 4. SUM EVENS
 // ============
 // You're given two variables with numeric values:
@@ -76,26 +127,139 @@ var sum = 0;    // We add even numbers to this variable.
 // When limit equals 8, sum equals 20 (2 + 4 + 6 + 8).
 // What happens if you set limit to a negative number?
 console.log("SUM EVENS");
+console.log("USING For LOOP");
 // Write your code here:
 
-console.log("limit = %s, sum = %s", limit, sum);
+if (limit>0)
+{
+	for (var n = 1; n <= limit; n++)
+	{
+		if(n%2==0)
+		{
+			sum=sum + n;
+			console.log("%s is an Even Number ",n);
+		}  
+	}
+	console.log("limit = %s, sum = %s", limit, sum);
+}
+else
+{
+	console.log("Limit cannot be a Negative Number");
+	console.log("limit = %s, sum = %s", limit, sum);
+}
+console.log("USING while LOOP");
 
-// 5. FIND A FAVORITE NUMBER
+if (limit>0)
+{
+	
+	var n = 1;
+	
+	while( n <= limit)
+	{
+		{
+		
+		console.log(n);
+		n++;
+	}
+	if(n%2==0)
+		{
+			sum=sum + n;
+			console.log("%s is an Even Number ",n);
+			
+		}  
+	}
+	console.log("limit = %s, sum = %s", limit, sum);
+}
+else
+{
+	console.log("Limit cannot be a Negative Number");
+	console.log("limit = %s, sum = %s", limit, sum);
+}
 // =========================
 // You're given two variables with numeric values:
 
-var winniesFavoriteNumber = 53; // Winnie's favorite number
-var kaisFavoriteNumber = 44;    // Kai's favorite number
-
+var winniesFavoriteNumber = 153; // Winnie's favorite number
+var kaisFavoriteNumber = 244;    // Kai's favorite number
+var third = 100;
+var fourth =  150;
+var fifth = 280;
+var favNumber = 0;
 // Write a for loop that loops until it reaches either winniesFavoriteNumber 
 // or kaisFavoriteNumber and then stop.
 // Print the final number to the JavaScript console.
 // Try changing the value of winniesFavoriteNumber and kaisFavoriteNumber.
 // Try adding a third, or forth, or fifth favorite number!
 console.log("FIND A FAVORITE NUMBER");
+console.log("USING For LOOP");
 // Write your code here:
 
 
+for(var n = 1; (n<=winniesFavoriteNumber)&&(n<=kaisFavoriteNumber)&&(n<=third)&&(n<=fourth)&&(n<=fifth); n++) 
+	{
+	console.log(n);
+
+	}
+	
+favNumber = n-1;
+
+if(favNumber == winniesFavoriteNumber)
+{
+	console.log(" The number is WinniesFavorite Number");
+}
+else if(favNumber == kaisFavoriteNumber)
+{
+	console.log(" The number is kaissFavorite Number");
+}
+
+else if(favNumber == third)
+{
+	console.log(" The number is third Number");
+}
+
+else if(favNumber == fourth)
+{
+	console.log(" The number is fourth Number");
+}
+
+else if(favNumber == fifth)
+{
+	console.log(" The number is fifth Number");
+}
+
+console.log("USING while LOOP");
+
+var n = 1;
+
+while((n<=winniesFavoriteNumber)&&(n<=kaisFavoriteNumber)&&(n<=third)&&(n<=fourth)&&(n<=fifth))
+{
+	console.log(n);
+	n++;
+}
+favNumber = n-1;
+
+if(favNumber == winniesFavoriteNumber)
+{
+	console.log(" The number is WinniesFavorite Number");
+}
+else if(favNumber == kaisFavoriteNumber)
+{
+	console.log(" The number is kaissFavorite Number");
+}
+
+else if(favNumber == third)
+{
+	console.log(" The number is third Number");
+}
+
+else if(favNumber == fourth)
+{
+	console.log(" The number is fourth Number");
+}
+
+else if(favNumber == fifth)
+{
+	console.log(" The number is fifth Number");
+}
 
 // CHALLENGE: WHILE LOOPS
 // ======================
