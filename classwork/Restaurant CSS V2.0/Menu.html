@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
+	<meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>Menu</title>
 		<link href="restaurantstyles.css" rel="stylesheet" type="text/css" />
 	</head>
@@ -32,18 +34,6 @@ a:hover {
 a:active {
   font-weight: bold;
 }
-	
-
- 
-<!--
-.styled-table
-{
-font: 500 14px sans-serif;
-color:green;
-width: 90%;
-margin: auto;
-}
--->
 
 		#tableA tr:nth-child(even) {background-color:orange;}
 		#tableA tr:nth-child(odd) {background-color:grey;}
@@ -62,6 +52,15 @@ align:center;
         }
 #tableA td{		 border: 1px solid #0d1f2d;}
 
+caption {
+  font-weight: bold;
+  font-size:15;
+  text-align: center;
+  border-style: none;
+  border-width: 1px;
+  border-color: #666666;
+}	
+
 
 		</style>
 
@@ -71,15 +70,15 @@ align:center;
 	
 		<header>
 		<h1>DIGEST</h1>
-		</header>
-		<hr>
+			</header>
 			<nav>
-				<a href="Home page.html"target="_self"style ="margin-right:20px">HOME </a>
-				<a href="Menu.html"target="_self"style ="margin-right:20px">Menu </a>
-				<a href="Contact Us.html"target="_self">Contact Us </a>
+				<a href="Home page.html">HOME </a>
+				<a href="Menu.html">Menu </a>
+				<a href="Contact Us.html">Contact Us </a>
+				<div class="clear-float"></div>
 			</nav>
-		<hr>
-		
+
+	
 				
 		<table align = "center" id="other-style" >
 		<tbody>
@@ -143,14 +142,13 @@ align:center;
 			</table> 
 		
 		               
-         
             <table  id="tableA" class ="tableA">
 			
               
          
-            <tr>
-			<td colspan ="2"> Beverages </td>  
-          </tr>
+            
+			<caption colspan ="2"> Beverages </caption>  
+    
                 <tr> 
 				
                     <td>Root Bear</td> 
