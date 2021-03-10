@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></head>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Reggae+One">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<link href="styles/restaurantstyles.css" rel="stylesheet" type="text/css" />
+
+		<title>Menu</title>
+	</head>
+	<style>
+		body {
+			background-color:lightblue;
+			font-family: "Reggae One", sans-serif;
+		}
+
+		a {
+		  font-family: "Reggae One";
+		  text-decoration: underline;
+		  font-weight: none;
+		  width: 180px; 
+		}
+
+		a:link {
+		  color: green;
+		}
+
+		a:visited {
+		  color: red;
+		}
+
+		a:hover {
+		  text-decoration: none;
+		  color: #00c;
+		  font-family: cursive;
+		}
+
+		a:active {
+		  font-weight: bold;
+		}
+		
+		.currentPage{
+			border-color: yellow;
+			border-style: outset;
+			text-decoration: underline;
+		}
+		
+		
+		h1 {
+			text-align: center;
+		}
+		
+		img
+		{
+		   width: 50%;
+		   margin: auto;
+		   height: 50%;
+		}
+
+		#tableA tr:nth-child(even) {background-color:hsla(120,70%,80%,0.3);}
+		#tableA tr:nth-child(odd) {background-color:hsla(120,70%,60%,0.3);}
+			
+		#tableA tr {
+			height: 40px;
+					
+		} 
+		#tableA {
+			align:center;
+			width: 60%;
+			margin: auto;
+			border: 1px solid #0d1f2d;
+			border-collapse: collapse;
+			padding: 5px 10px;
+		}
+		#tableA td{border: 1px solid #0d1f2d;}
+
+		caption {
+			font-weight: bold;
+			font-size:15;
+			text-align: center;
+			border-style: none;
+			border-width: 1px;
+			border-color: #666666;
+		}	
+	</style>
+	<body>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		<noscript>
+			For full functionality of this site it is necessary to enable JavaScript.
+			Here are the <a href="https://www.enable-javascript.com/">
+			instructions how to enable JavaScript in your web browser</a>.
+		</noscript>
+		
+		<header>
+			<h1>DIGEST</h1>
+		</header>
+		<nav>
+			<a href="Home page.html"><i class="fas fa-home"></i> Home</a>
+			<a href="Menu.html" class="currentPage"><i class="fas fa-utensils"></i> Menu </a>
+			<a href="Contact Us.html" d> Contact</a>
+			<div class="clear-float"></div> 
+		</nav>
+		<table align = "center" id="other-style" >
+			<tbody>
+				<div id="digestCarousel" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#digestCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#digestCarousel" data-slide-to="1"></li>
+						<li data-target="#digestCarousel" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner">
+					<div class="item active">
+					  <img src="images/carousel.jpg">
+					  <div class="carousel-caption">
+						<h3>We are opening a new location!!</h3>
+					  </div>
+					</div>
+
+					<div class="item">
+					  <img src="images/carousel.jpg">
+					  <div class="carousel-caption">
+						<h3>We're rolling out our seasonal menu, with special options for this season</h3>
+					  </div>
+					</div>
+
+					<div class="item">
+					  <img src="images/carousel.jpg">
+					  <div class="carousel-caption">
+						<h3>The Drink of the Month is Digest Special Brew</h3>
+					  </div>
+					</div>
+					</div>
+
+					<a class="left carousel-control" href="#digestCarousel" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"  aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#digestCarousel" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"  aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+				<br>
+				<tr>
+					<td align ="Center" style="vertical-align:top">
+						<b>Burger and Fries </b><br>
+						An American Classic!<br>
+						Your choice - with or without cheese<br>
+						Pickle, onion, tomato and lettuce<br>
+						Served with our famous thick cut<br>
+						french fries<br>
+						£7.95
+					</td>
+					<td align ="center" style="vertical-align:top">
+						<b>Hot Dog and Chips</b><br>
+						A Summer Classic!<br>
+						Your choice - white or wheat bun<br>
+						Relish, mustard, and ketchup<br>
+						Served with our house-made chips<br>
+						£7.95
+					</td> 
+					<td align ="center" style="vertical-align:top">
+						<b>Italian Sausage </b><br>
+						An all time Favourite!<br>
+						Your Choice - Mild or spicy cole slaw<br>
+						served with garlic mashers<br>
+						£10.95
+					</td>
+				</tr>
+				<tr><td>&nbsp;</td></tr>
+				<tr>
+					<td align ="Center" style="vertical-align:top">
+						<b>Tenderloin Sandwich and Chips</b><br>
+						Really Hits the Spot!<br>
+						Plain or Sesame Seed Bun<br>
+						Pickle, onion, tomato, and lettuce<br>
+						Served with our house-made chips<br>
+						£8.95
+					</td>
+					<td align ="center" style="vertical-align:top">
+						<b>House Salad</b><br>
+						On the Lighter Side<br>
+						Your choice - with or without cheese<br>
+						Iceberg lettuce, tomatoes, peppers<br>
+						Thousand Island or Ranch<br>
+						Dressing served with a dinner roll<br>
+						£6.95
+					</td> 
+					<td align ="center" style="vertical-align:top">
+						<b>Brisket Sandwich and Fries </b><br>
+						A Taste of Texas!<br>
+						Smoked Brisket on Thick Cut<br>
+						Texas Toast<br>
+						Cole Slaw<br>
+						served with our familes thick cut<br>
+						french fries<br>
+						£7.95
+					</td>
+				</tr>
+			</tbody>
+		</table> 
+		
+		<table  id="tableA" class ="tableA">
+			<tr> 
+				<td>Root Beer</td> 
+				<td>$3.00</td> 
+			</tr> 
+			<tr> 
+				<td>Bottle water</td> 
+				<td>$1.25</td> 
+			</tr> 
+			<tr> 
+				<td>Lemonade</td> 
+				<td>$1.00</td> 
+			</tr> 
+			<tr> 
+				<td>Iced tea</td> 
+				<td>$1.25</td> 
+			</tr> 
+		</table>							
+															
+		<footer>
+			<center><B>Johnson street, Peasemore, UK, RJ24UK<B></center>
+			<center><B>07440004321</B></center>
+		</footer>
+	
+	</body>
+</html>

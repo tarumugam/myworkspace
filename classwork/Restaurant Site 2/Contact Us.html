@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link href="styles/restaurantstyles.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Reggae+One">
+
+		<title>Contact Us</title>
+	</head>
+	<style>
+		body {
+			background-color:lightblue;
+			font-family: "Reggae One", sans-serif;
+		}
+
+		a {
+		  font-family: "Reggae One";
+		  text-decoration: underline;
+		  font-weight: none;
+		}
+
+		a:link {
+		  color: green;
+		}
+
+		a:visited {
+		  color: red;
+		}
+
+		a:hover {
+		  text-decoration: none;
+		  color: #00c;
+		  font-family: cursive;
+		}
+
+		a:active {
+		  font-weight: bold;
+		}
+
+		.currentPage {
+		  border-color: yellow;
+		  border-style: outset;
+		  text-decoration: underline;
+		}
+	</style>
+	
+	<body>
+		<header>
+			<h1>DIGEST</h1>
+		</header>
+
+		<nav>
+			<a href="Home page.html">Home </a>
+			<a href="Menu.html">Menu </a>
+			<a href="Contact Us.html" class="currentPage">Contact Us </a>
+			<div class="clear-float"></div>
+		</nav>
+
+		
+		<form>		
+			<table align = "center" >
+				<tr>
+					<td align ="right">Name:</td>
+					<td><input type= "text" name="Names" /></td>
+				</tr>
+				<tr>
+					<td align ="right">	Email:</td>
+					<td><input type= "text" name="Names" /></td>
+				</tr>
+				<tr>
+					<td align ="right">Phone:</td>
+					<td><input type= "text" name="Names" />
+				</tr>
+				<tr>
+					<td align ="right">Reason for Enquiry:</td>
+					<td>
+						<select name="FOOD">
+							<option value="Catering ">Catering </option>
+							<option value="HD">Home Delivery </option>
+							<option value="TB">Table Booking </option>
+							<option value="ta">Take-away </option>									
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td align ="right">Additional Information :</td>
+					<td>
+						<textarea name="AddInfo"></textarea>
+						</br>
+					</td>
+				</tr>
+				<tr>
+					<td align ="right">Have you been to the restaurant?</td>
+					<td>
+						<input type="radio" name="answer" value="NO" checked />No
+						<input type="radio" name="answer" value="YES"  />Yes
+					</td>
+				</tr>
+				<tr>
+					<td align ="right">Best days to contact you:</td>
+					<td>
+						<input type="checkbox" name="MON" value="MON" />M
+						<input type="checkbox" name="TUE" value="TUE" />T
+						<input type="checkbox" name="WED" value="WED" />W
+						<input type="checkbox" name="THU" value="THU" />T
+						<input type="checkbox" name="FRI" value="FRI" />F
+					</td>
+				</tr>	
+			</table>							
+			<center><input type="submit" value="Send Request"/></center>
+		</form>
+		
+		<footer>
+		<hr>
+		<center><B>Johnson street, Losley, UKI, RG24UK<B></center>
+		<center><B>07400001111</B></center>
+		</footer>
+	</body>
+</html>

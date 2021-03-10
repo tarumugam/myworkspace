@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<!--
+	Creator  	: Thangamani Arumugam
+	Project		: Restaurant Site 3
+	Date created: March 2021
+-->
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></head>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Reggae+One">
+		<link href="styles/restaurantstyles.css" rel="stylesheet" type="text/css" />
+
+		<title>Contact Us</title>
+	</head>
+	<style>
+		body {
+			background-color:lightblue;
+			font-family: "Reggae One", sans-serif;
+		}
+
+		a {
+		  font-family: "Reggae One";
+		  text-decoration: underline;
+		  font-weight: none;
+		  width: 180px; 
+		}
+
+		a:link {
+		  color: green;
+		}
+
+		a:visited {
+		  color: red;
+		}
+
+		a:hover {
+		  text-decoration: none;
+		  color: #00c;
+		  font-family: cursive;
+		}
+
+		a:active {
+		  font-weight: bold;
+		}
+		
+		.currentPage{
+			border-color: yellow;
+			border-style: outset;
+			text-decoration: underline;
+		}
+		
+		h1 {
+			text-align: center;
+		}
+		
+		.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+			color: #5b7d87;
+			background-color: #fef9ff !important;
+		}
+		
+	</style>
+	<body>
+		<!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		<script src="javascript\validation.js"></script>
+		<noscript>
+			For full functionality of this site it is necessary to enable JavaScript.
+			Here are the <a href="https://www.enable-javascript.com/">
+			instructions how to enable JavaScript in your web browser</a>.
+		</noscript>
+		
+		<header>
+			<h1>DIGEST</h1>
+		</header>
+		<nav>
+			<a href="Home page.html"><i class="fas fa-home"></i> Home</a>
+			<a href="Menu.html"><i class="fas fa-utensils"></i> Menu </a>
+			<a href="Contact Us.html" class="currentPage" > Contact</a>
+			<div class="clear-float"></div> 
+		</nav>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="well well-sm">
+						<form  onsubmit=" return validateForm();"  method = "POST" >
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label for="name">Name</label>
+										<input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+									</div>
+									<div class="form-group">
+										<label for="email">Email Address</label>
+										<input type="email" class="form-control" id="email" placeholder="Enter email" required="required" />
+									</div>
+									<div class="form-group">
+										<label for="phone">Telephone</label>
+										<input type="tel" class="form-control" id="phone" placeholder="Enter telephone" name="phone">
+									</div>
+									
+									
+									<div class="form-group">
+										<label for="phone">Have you been to the restaurant?</label>
+										<div class="row">
+											<div class="col-md-2">
+												<div class="radio">
+													<label><input type="radio" name="optradio" checked>Yes</label>
+												</div>
+											</div>
+											<div class="col-md-2">
+												<div class="radio">
+												  <label><input type="radio" name="optradio">No</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<div class="form-group">
+										<label for="phone">Best days to contact you:</label>
+										<div class="row">
+											<div class="col-md-2">
+												<label class="checkbox-inline">
+												  <input type="checkbox" value="mon">Mon
+												</label>
+											</div>
+											<div class="col-md-2">
+												<label class="checkbox-inline">
+												  <input type="checkbox" value="tue">Tue
+												</label>
+											</div>
+											<div class="col-md-2">
+												<label class="checkbox-inline">
+												  <input type="checkbox" value="wed">Wed
+												</label>
+											</div>
+											<div class="col-md-2">
+												<label class="checkbox-inline">
+												  <input type="checkbox" value="thu">Thu
+												</label>
+											</div>
+											<div class="col-md-2">
+												<label class="checkbox-inline">
+												  <input type="checkbox" value="fri">Fri
+												</label>
+											</div>
+											<div class="col-md-2">
+												<label class="checkbox-inline">
+												  <input type="checkbox" value="any" checked>Any
+												</label>
+											</div>
+										</div>
+									</div>
+									
+									<div class="form-group">
+										<label for="reason">Reason for Enquiry:</label>
+										<select id="reason" name="reason" class="form-control" required="required">
+											<option value="tableBooking">Table Booking</option>
+											<option value="homeDelivery">Home Delivery</option>
+											<option value="takeAway">Take Away</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label for="name">Message</label>
+										<textarea name="message" id="message" class="form-control" rows="18" cols="25" required="required"
+											placeholder="Enter Message"></textarea>
+									</div>
+								</div>
+								
+							</div>
+							<div class="row">
+									<div class="col-md-2"></div>
+									<div class="col-md-2"></div>
+									<div class="col-md-2"></div>
+									<div class="col-md-2"></div>
+									<div class="col-md-4">
+										<button type="reset" class="btn btn-primary pull-right" id="btnReset" >Reset</button>
+										<button type="submit" class="btn btn-primary pull-right" id="btnSendMsg" >Send Message</button>
+									</div>
+								</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+		<center><B>Johnson street, Peasemore, UK, RJ24UK<B></center>
+			<center><B>07440004321</B></center>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,67 @@
+<!--
+	Creator		: Thangamani Arumugam
+	Project		: Restaurant Site 1
+	Date created: Jan 2021
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contact us</title>
+	</head>
+	<body>
+	<header>
+		<h1>DIGEST</h1>
+		<link href="Styles/restaurantstyles.css" rel="stylesheet" type="text/css" />
+		</header>
+		<hr>
+			<nav>
+				<a href="Home page.html" target="_self" style ="margin-right:20px">Home </a>
+				<a href="Menu.html" target="_self" style ="margin-right:20px">Menu </a>
+				<a href="Contact Us.html" target="_self">Contact Us </a>
+			</nav>
+		<hr>
+		
+			<form method = "POST" >		
+			<table align = "center" >
+			
+				<tr>
+					<td align ="right">Name:</td>
+					<td><input type= "text" name="Names" /></td>
+				</tr>
+				<tr>
+					<td align ="right">	Email:</td>
+					<td><input type= "text" name="Names" /></td>
+				</tr>
+				<tr>
+					<td align ="right">Phone:</td>
+					<td><input type= "text" name="Names" />
+				</tr>
+				<tr>
+					<td align ="right">Reason for Enquiry:</td>
+					<td><select name="FOOD">
+									<option value="Catering ">Catering </option>
+									<option value="HD">Home Delivery </option>
+									<option value="TB">Table Booking </option>
+									<option value="ta">Take-away </option>									
+						</select></td></tr>
+			<tr><td align ="right">Additional Information :</td><td><textarea name="AddInfo"></textarea></br></td></tr>
+			<tr><td align ="right">Have you been to the restaurant?</td><td>
+										<input type="radio" name="answer" value="NO" checked />No
+										<input type="radio" name="answer" value="YES"  />Yes</td></tr>
+			<tr><td align ="right">Best days to contact you:</td><td><input type="checkbox" name="MON" value="MON" />M
+									<input type="checkbox" name="TUE" value="TUE" />T
+									<input type="checkbox" name="WED" value="WED" />W
+									<input type="checkbox" name="THU" value="THU" />T
+									<input type="checkbox" name="FRI" value="FRI" />F</td></tr>	
+			</table>							
+			<center><input type="submit" value="Send Request"/></center>
+									
+			</form>
+		
+		<footer>
+			<hr>
+			<center><B>Johnson street, Peasemore, RJ24UK<B></center>
+			<center><B>07440004321</B></center>
+		</footer>
+	</body>
+</html>
